@@ -139,7 +139,9 @@ proc send_short_ident {{hour -1} {minute -1}} {
         #set cwcall "DE $mycall/R"
         #CW::play $cwcall
         #playSilence 130;
-  	playMsg "Core" "online";
+  	#playMsg "Core" "online";
+  	#spellWord $mycall; uncomment if nakaclub
+     	playSilence 330;
      }
   }
   if {$minX == 00} {
