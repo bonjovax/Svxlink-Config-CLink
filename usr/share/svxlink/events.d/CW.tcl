@@ -70,6 +70,7 @@ array set letters {
   "?" "..--.."
   "/" "-..-."
   "=" "-...-"
+  "-" "-....-"
 
   " " " "
 }
@@ -158,8 +159,8 @@ proc play {txt} {
 
 
 # Set defaults
-setPitch 760;
+setPitch 670;
 setAmplitude 90;
-setCpm 70;
+setCpm 90;
 
 }

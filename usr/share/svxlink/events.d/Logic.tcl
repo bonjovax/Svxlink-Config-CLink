@@ -52,7 +52,7 @@ variable sql_rx_id 0;
 # Executed when the SvxLink software is started
 #
 proc startup {} {
-  #playMsg "Core" "online"
+  playMsg "Core" "online"
   #send_short_ident
 }
 
@@ -136,8 +136,8 @@ proc send_short_ident {{hour -1} {minute -1}} {
   if {$minX == 30} {
      playSilence 130;
      if {$CFG_TYPE == "Simplex"} {
-        #set cwcall "DE $mycall/R"
-        #CW::play $cwcall
+        set cwcall "DE $mycall-L"
+        CW::play $cwcall
         #playSilence 130;
   	#playMsg "Core" "online";
   	#spellWord $mycall; uncomment if nakaclub
